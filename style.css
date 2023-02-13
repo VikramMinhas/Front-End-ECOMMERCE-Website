@@ -1,0 +1,291 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}  
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: rgb(136, 195, 230);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    width: 180px;
+    height: 50px;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav li {
+    list-style: none;
+    padding: 0px 30px;
+    margin: 5px;
+    position: relative;
+}
+
+#nav li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s;
+}
+
+#nav li a:hover,
+#nav li a.active {
+    color:rgb(255, 255, 255);
+} 
+
+#nav li a.active::after,
+#nav li a:hover::after {
+    content: "";
+    width: 19px;
+    height: 2px;
+    background:rgb(255, 255, 255);
+    position: absolute;
+    bottom: -4px;
+    left: 30px;
+}
+
+#firstpage {
+    background-image: url(images/shorts5.jpg);
+    height: 90vh;
+    width: 93.65%;
+    background-position: top 25% right 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#firstpage h2, h1, p {
+    color: white;
+}
+
+#firstpage h1 {
+    font-size: 60px;
+}
+
+#firstpage h2 {
+    font-size: 45px;
+}
+
+#firstpage p {
+    font-size: 25px;
+}
+
+#introtext {
+    margin-top: -200px;
+}
+
+#firstpage button {
+    background-color: rgb(136, 195, 230);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.product-section {
+    padding: 40px 0;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#fp {
+    text-align: center;
+}
+
+#fp h2 {
+    font-size: 60px;
+}
+
+#fp p {
+    font-size: 40px;
+    color: gray;
+}
+
+.product-container {
+    justify-content: space-between;
+}
+
+#fp .product {
+    width: 20%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    transition: .2s;
+    justify-content: space-evenly;
+}
+
+#fp .product:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.15);
+}
+
+#fp img {
+    border-radius: 20px;
+    width: 200px;
+}
+
+#fp h5, h4, a {
+    color: black;
+    font-size: 20px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(images/banner/b14.png);
+    background-color: #041e42;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.newstext h3 {
+    font-size: 30px;
+    color:rgb(255, 255, 255);
+    margin-left: 60px;
+}
+
+.newstext h5 {
+    font-size: 20px;
+    color:rgb(156, 156, 156);
+    margin-left: 60px;
+}
+
+.newstext span {
+    color: #ffbd27;
+}
+
+.product-section2 {
+    padding: 10px 0;
+}
+
+#newsletter input {
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    margin-right: 300px;
+    width: 80%;
+}
+
+#newsletter button {
+    background-color: rgb(136, 195, 230);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.col1 img {
+    width: 180px;
+    height: 50px;
+}
+
+footer {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer h3 {
+    font-size: 28px;
+    padding-bottom: 5px;
+    color: black;
+}
+
+footer h5 {
+    font-size: 16px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.col1 {
+    color: gray;
+}
+
+#icons {
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+footer .install .row {
+    display: flex;
+}
+
+footer .install #apple {
+    border: 1px solid rgb(136, 195, 230);
+}
+
+footer .install #android {
+    border: 1px solid rgb(136, 195, 230);
+    margin-left: 5px;
+}
+
+.payment h5 {
+    margin-top: 30px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.col1 #contact {
+    font-size: 20px;
+}
